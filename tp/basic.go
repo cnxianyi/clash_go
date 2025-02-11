@@ -95,27 +95,3 @@ func SetTagMap() {
 	tag = tags
 	allTag = allTags
 }
-
-type Clash struct {
-	MixedPort               int     `yaml:"mixed-port"`
-	AllowLan                bool    `yaml:"allow-lan"`
-	Mode                    string  `yaml:"mode"`
-	LogLevel                string  `yaml:"log-level"`
-	ExternalController      string  `yaml:"external-controller"`
-	Secret                  string  `yaml:"secret"`
-	Ipv6                    bool    `yaml:"ipv6"`
-	UnifiedDelay            bool    `yaml:"unified-delay"`
-	TcpConcurrent           bool    `yaml:"tcp-concurrent"`
-	FindProcessMode         string  `yaml:"find-process-mode"`
-	GlobalClientFingerprint string  `yaml:"global-client-fingerprint"`
-	GeodataMode             bool    `yaml:"geodata-mode"`
-	GeodataLoader           string  `yaml:"geodata-loader"`
-	GeoxUrl                 GeoxUrl `yaml:"geox-url"`
-}
-
-type GeoxUrl struct {
-	Geoip   string `yaml:"geoip"`
-	Geosite string `yaml:"geosite"`
-	Mmdb    string `yaml:"mmdb"`
-	Asn     string `yaml:"asn"`
-}
